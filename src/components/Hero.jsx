@@ -89,7 +89,7 @@
 function Hero() {
   const handleDownload = async () => {
     try {
-      const response = await fetch("/src/assets/resume_bk_2025.pdf");
+      const response = await fetch("./assets/resume_bk_2025.pdf");
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
@@ -155,7 +155,7 @@ function Hero() {
         <div className="relative">
           <div className="w-[400px] h-[400px] bg-[#FFE082] rounded-full overflow-hidden shadow-lg relative z-10">
             <img
-              src="/src/assets/bhargavi.png"
+              src="./assets/bhargavi.png"
               alt="Bhargavi Krishnamurthi"
               className="w-full h-full object-cover"
             />
