@@ -5,6 +5,7 @@ import About from './components/About.jsx';
 import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
+import CurrentWorks from './components/CurrentWorks.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <CurrentWorks />
         <Contact />
       </div>
     </BrowserRouter>

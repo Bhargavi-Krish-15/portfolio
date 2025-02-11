@@ -36,7 +36,7 @@ function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-[#FFF8E1] to-[#E3F2FD]">
+    <section id="contact" className="py-20 bg-gradient-to-b from-[#E3F2FD] to-[#FFF8E1]">
       <div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-4xl font-bold mb-12 text-center text-[#1976D2]">
           Get In Touch

@@ -33,7 +33,7 @@
 
 // export default Navbar;
 
-import { FiHome, FiUser, FiMail } from "react-icons/fi";
+import { FiUser, FiMail, FiCode } from "react-icons/fi";
 
 function Navbar() {
   return (
@@ -49,15 +49,40 @@ function Navbar() {
 
           {/* Right: Navigation Icons */}
           <div className="flex items-center space-x-8">
-            <a href="#home" className="text-[#1976D2] hover:text-[#FFA000] text-2xl transition-colors">
-              <FiHome />
-            </a>
-            <a href="#about" className="text-[#1976D2] hover:text-[#FFA000] text-2xl transition-colors">
-              <FiUser />
-            </a>
-            <a href="#contact" className="text-[#1976D2] hover:text-[#FFA000] text-2xl transition-colors">
-              <FiMail />
-            </a>
+            <div className="relative group">
+                <a 
+                    href="#currentWorks" 
+                    className="flex flex-col items-center text-[#1976D2] hover:text-[#FFA000] transition-colors"
+                >
+                    <FiCode className="text-2xl" />
+                    <span className="absolute -bottom-6 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    Current Works
+                    </span>
+                </a>
+            </div>
+
+            <div className="relative group">
+                <a 
+                    href="#about" 
+                    className="flex flex-col items-center text-[#1976D2] hover:text-[#FFA000] transition-colors"
+                >
+                    <FiUser className="text-2xl" />
+                    <span className="absolute -bottom-6 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    About Me
+                    </span>
+                </a>
+            </div>
+            <div className="relative group">
+                <a 
+                    href="#contact" 
+                    className="flex flex-col items-center text-[#1976D2] hover:text-[#FFA000] transition-colors"
+                >
+                    <FiMail className="text-2xl" />
+                    <span className="absolute -bottom-6 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                    Contact Me
+                    </span>
+                </a>
+            </div>
           </div>
         </div>
       </div>
