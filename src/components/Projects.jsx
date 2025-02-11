@@ -49,7 +49,7 @@ function Projects() {
     <section id="projects" className="py-20 bg-gradient-to-b from-[#E3F2FD] to-[#FFF8E1]">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl font-bold mb-12 text-center text-[#1976D2]">
-          Academic Projects
+          Projects
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
