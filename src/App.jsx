@@ -10,7 +10,9 @@ import CurrentWorks from './components/CurrentWorks.jsx';
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative">
+      {/* <div className="relative"> */}
+       <div className="relative w-full min-h-screen bg-gradient-to-b from-[#FFF8E1] to-[#E3F2FD]">
+
         <Navbar />
         <Hero />
         <About />

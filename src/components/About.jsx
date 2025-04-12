@@ -3,7 +3,7 @@ import { FiBook, FiBriefcase, FiCode, FiFolder } from "react-icons/fi";
 import Skills from './Skills';
 
 function About() {
-  const [activeTab, setActiveTab] = useState("academics");
+  const [activeTab, setActiveTab] = useState("experience");
     const [expandedExp, setExpandedExp] = useState(null);
 
   const education = [
@@ -24,6 +24,30 @@ function About() {
   ];
 
   const experience = [
+    {
+      title: "Software Engineering Intern",
+      company: "Skygeni | Remote",
+      start_year: "2025",
+      end_year: "Present",
+      link: "https://skygeni.com/",
+      description: [
+        "Currently working as a Software Engineering Intern at Skygeni, focusing on developing and optimizing web applications.",
+        "Utilized React, Node.js, and MongoDB to build and maintain scalable web applications.",
+        "Assisting in enhancing web, mobile, and AI applications, including UI design, test case creation, and SaaS integration using MERN stack"
+      ]
+    },
+    {
+      title: "Graduate Research Assistant",
+      company: "University at Buffalo | Buffalo, NY, USA",
+      start_year: "2025",
+      end_year: "Present",
+      link: "https://wttool.eng.buffalo.edu/",
+      description: [
+        "Currently in the development team of a web-based application for wireless network simulations using real-world geographical data by enhancing features along with the sandbox for network creation, NS3-based simulations, and heatmap visualizations.",
+        "Utilized Python and Flask for backend development, ensuring efficient data handling and processing.",
+        "Debugging application issues, preparing technical documentation, and creating video demos for academic conferences"
+      ]
+    },
     {
       title: "Software Engineer",
       company: "Juhomi | Chennai, India",
@@ -72,16 +96,6 @@ function About() {
         {/* Tabs */}
         <div className="flex justify-center gap-8 mb-12">
           <button
-            onClick={() => setActiveTab("skills")}
-            className={`flex items-center px-6 py-2 rounded-full text-lg font-medium transition-all ${
-              activeTab === "skills"
-                ? "bg-[#1976D2] text-white shadow-lg"
-                : "text-[#1976D2] hover:bg-[#1976D2]/10"
-            }`}
-          >
-            <FiCode className="mr-2" /> Skills
-          </button>
-           <button
             onClick={() => setActiveTab("experience")}
             className={`flex items-center px-6 py-2 rounded-full text-lg font-medium transition-all ${
               activeTab === "experience"
@@ -90,6 +104,16 @@ function About() {
             }`}
           >
             <FiBriefcase className="mr-2" /> Experience
+          </button>
+           <button
+            onClick={() => setActiveTab("skills")}
+            className={`flex items-center px-6 py-2 rounded-full text-lg font-medium transition-all ${
+              activeTab === "skills"
+                ? "bg-[#1976D2] text-white shadow-lg"
+                : "text-[#1976D2] hover:bg-[#1976D2]/10"
+            }`}
+          >
+            <FiCode className="mr-2" /> Skills
           </button>
           <button
             onClick={() => setActiveTab("academics")}
@@ -109,7 +133,7 @@ function About() {
           {/* Academics Tab */}
         {activeTab === "academics" && (
             <>
-                <h3 className="text-3xl font-bold text-center mb-12 text-[#0D47A1] italic">My Academical Journey</h3>
+                <h3 className="text-3xl font-bold text-center mb-12 text-[#0D47A1] italic">From textbooks to triumphs (with a pit stop at procrastination)</h3>
                 <div className="relative flex flex-col items-start space-y-16 max-w-4xl mx-auto">
                     {education.map((edu, index) => (
                         <div key={index} className="relative flex items-start gap-8">
@@ -150,7 +174,7 @@ function About() {
            {activeTab === "experience" && (
         <>
             <h3 className="text-3xl font-bold text-center mb-12 text-[#0D47A1] italic">
-            My Professional Journey
+            Experiences I've Gained and Lessons I'm Still Figuring Out
             </h3>
             <div className="relative flex flex-col items-start space-y-16 max-w-4xl mx-auto">
             {experience.map((exp, index) => (

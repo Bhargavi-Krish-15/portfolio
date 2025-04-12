@@ -1,9 +1,18 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+#root {
+  /* Change max-width to width for full responsiveness */
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0; /* Remove padding */
+  text-align: center;
 }
+
 
 .logo {
   height: 6em;

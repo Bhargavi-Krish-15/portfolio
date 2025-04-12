@@ -3,11 +3,25 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 function CurrentWorks() {
   const currentProjects = [
     {
-        title: "Application Development Volunteer",
+      title: "Software Engineering Intern",
+      description: "Currently working as a Software Engineering Intern at Skygeni, focusing on developing and optimizing web applications.",
+      status: "Ongoing",
+      tech: ["React", "MongoDB", "Node.js", "Express"],
+      live: "https://skygeni.com/"
+    },
+    {
+        title: "Graduate Research Assistant",
         description:"Currently in the development team of a web-based application for wireless network simulations using real-world geographical data by enhancing features along with the sandbox for network creation, NS3-based simulations, and heatmap visualizations.",
         status:"Ongoing",
         tech: ["Python", "Flask", "MySql"],
         live: "https://wttool.eng.buffalo.edu"
+    },
+    {
+      title: "Learning Full Stack Development",
+      description: "Currently doing Certifications on advanced concepts in full-stack development, focusing on modern web technologies and best practices.",
+      status: "Ongoing",
+      tech: ["React", "Cloud Computing", "Software Development", "Python", "PHP"],
+      live: "https://www.linkedin.com/in/bhargavi-krishnamurthi-326a68153/details/certifications/"
     },
     {
       title: "Portfolio Website",
@@ -16,13 +30,6 @@ function CurrentWorks() {
       tech: ["React", "Tailwind CSS", "Vite"],
       github: "https://github.com/Bhargavi-Krish-15/portfolio",
       live: "https://bhargavi-krish-15.github.io/portfolio/"
-    },
-    {
-      title: "Learning Full Stack Development",
-      description: "Currently doing Certifications on advanced concepts in full-stack development, focusing on modern web technologies and best practices.",
-      status: "Ongoing",
-      tech: ["React", "Cloud Computing", "Software Development", "Python", "PHP"],
-      live: "https://www.linkedin.com/in/bhargavi-krishnamurthi-326a68153/details/certifications/"
     },
     // Add more current works/projects
   ];

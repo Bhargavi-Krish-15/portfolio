@@ -4,13 +4,13 @@ function Projects() {
       title: "Java Play Store Clone with Fake Review Detection",
       description: "Developed a virtual Play Store platform to enhance user trust by filtering out fake reviews. Implemented a custom algorithm for fake review detection using keyword analysis and text pattern recognition.",
       tech: ["Java SE", "MySQL"],
-      github: "https://github.com/yourusername/playstore-clone",
+      github: "https://github.com/Bhargavi-Krish-15?tab=repositories",
     },
     {
       title: "Machine Learning Crime Prediction Application",
       description: "Developed a predictive analytics web application to forecast crime trends based on geographical data. Enabled users to search for crime types by area and time, enhancing public safety awareness.",
       tech: ["Streamlit", "scikit-learn", "Python"],
-      github: "https://github.com/yourusername/crime-prediction",
+      github: "https://github.com/Bhargavi-Krish-15?tab=repositories",
     },
     {
       title: "React Financial Data Visualization Dashboard",
@@ -23,13 +23,13 @@ function Projects() {
       title: "Operating Systems and Database Systems Projects",
       description: "Implemented core operating system concepts such as memory management, process scheduling and database management, passing test cases for functionality and performances.",
       tech: ["C++", "Docker"],
-      github: "https://github.com/yourusername/os-projects",
+      github: "https://github.com/wendanzhao/UB-CSE562-TacoDB",
     },
     {
       title: "C++ Client-Server Text Chat Application",
       description: "Engineered a text chat application to facilitate real-time communication between multiple clients.",
       tech: ["C++", "TCP/IP sockets"],
-      github: "https://github.com/yourusername/chat-app",
+      github: "https://github.com/UB-CSE4589/pa1-jjjeong-bkrishna",
     },
     {
       title: "Hotel Management System",
@@ -43,6 +43,12 @@ function Projects() {
       tech: ["Ruby", "Rails"],
       github: "https://github.com/Bhargavi-Krish-15/Employee_app",  
     },
+    {
+      title: "Hands-On Beginnings",
+      description: "Developed a hands-on learning platform for beginners in programming, featuring interactive tutorials and coding challenges.",
+      tech: ["HTML", "CSS", "JavaScript", "Mern Stack", "React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "swagger", "Postman", "kubernetes", "Docker","Git","Orm"],
+      github: "https://github.com/Bhargavi-Krish-15?tab=repositories",
+    }
   ];
 
   return (
