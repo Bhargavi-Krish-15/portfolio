@@ -119,7 +119,7 @@ function Hero() {
             <span className="text-[#0D47A1]">Bhargavi Krishnamurthi</span>
           </h1>
           <p className="text-[#FFA000] uppercase tracking-wider text-sm font-semibold mb-6">
-            Full-Stack and App Developer
+            Full-Stack and Web Developer
           </p>
           <p className="text-gray-700 text-lg mb-8">
             Computer Science graduate from SUNY Buffalo.<br />

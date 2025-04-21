@@ -2,6 +2,21 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 function CurrentWorks() {
   const currentProjects = [
+
+    {
+      title: "Preparing for Aws Cloud Practitioner certification",
+      description: "Currently preparing for the AWS Cloud Practitioner certification to enhance my cloud computing skills and knowledge.",
+      status: "Ongoing",
+      tech: ["AWS", "Cloud Computing"],
+      live: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+    },
+    {
+      title: "Preparing for Azure Fundamentals certification",
+      description: "Currently preparing for the Azure Fundamentals certification to strengthen my understanding of Microsoft Azure cloud services and database administration.",
+      status: "Ongoing",
+      tech: ["Azure", "Cloud Computing", "Database Administration"],
+      live: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
+    },
     {
       title: "Software Engineering Intern",
       description: "Currently working as a Software Engineering Intern at Skygeni, focusing on developing and optimizing web applications.",
@@ -19,7 +34,7 @@ function CurrentWorks() {
     {
       title: "Learning Full Stack Development",
       description: "Currently doing Certifications on advanced concepts in full-stack development, focusing on modern web technologies and best practices.",
-      status: "Ongoing",
+      status: "Completed",
       tech: ["React", "Cloud Computing", "Software Development", "Python", "PHP"],
       live: "https://www.linkedin.com/in/bhargavi-krishnamurthi-326a68153/details/certifications/"
     },
@@ -38,7 +53,7 @@ function CurrentWorks() {
     <section id="currentWorks" className="py-20 bg-gradient-to-b from-[#FFF8E1] to-[#E3F2FD]">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl font-bold mb-12 text-center text-[#1976D2]">
-          What I'm Currently doing
+          My latest adventure in the wild world of productivity
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">

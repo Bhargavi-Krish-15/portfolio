@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { FiBook, FiBriefcase, FiCode, FiFolder } from "react-icons/fi";
+import { FiBook, FiBriefcase, FiCode, FiFolder, FiFileText } from "react-icons/fi";
 import Skills from './Skills';
+import Certifications from "./Certifications";
 
 function About() {
   const [activeTab, setActiveTab] = useState("experience");
@@ -125,6 +126,16 @@ function About() {
           >
             <FiBook className="mr-2" /> Academics
           </button>
+          <button
+            onClick={() => setActiveTab("certifications")}
+            className={`flex items-center px-6 py-2 rounded-full text-lg font-medium transition-all ${
+              activeTab === "certifications"
+                ? "bg-[#1976D2] text-white shadow-lg"
+                : "text-[#1976D2] hover:bg-[#1976D2]/10"
+            }`}
+          >
+            <FiFileText className="mr-2" /> Certifications
+          </button>
           
         </div>
 
@@ -227,7 +238,12 @@ function About() {
             </div>
         </>
         )}
- 
+          {/* Certifications Tab */}
+          {activeTab === "certifications" && (
+            <>
+              <Certifications />
+            </>
+            )}
 
           {/* Skills Tab */}
           {activeTab === "skills" && (
